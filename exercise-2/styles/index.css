@@ -1,55 +1,74 @@
 body {
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(-45deg, #35577D, #141E30);
-    margin: 0;
-    padding: 0;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #35577d, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #35577d, #141e30);
+  margin: 0;
+  padding: 0;
 }
 
 .content {
-    padding: 40px;
-    margin-right: 30%;
+  padding: 40px;
+  margin-right: 30%;
 }
 
 h1 {
-    color: #fff;
-    font-size: 2em;
-    width: 100%;
+  color: #fff;
+  font-size: 2em;
+  width: 100%;
+  font-family: Georgia;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: 100;
-    font-size: 22px;
-    line-height: 24px;
-    padding-bottom: 30px;
-    text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: left;
+  font-family: Georgia;
+  text-transform: capitalize;
 }
 
 p {
-    color: AliceBlue;
-    line-height: 1.3em;
-    text-align: left;
-    width: 100%;
+  color: AliceBlue;
+  line-height: 1.3em;
+  text-align: left;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+p::first-line {
+  font-weight: bolder;
 }
 
 .image {
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  background: url("../img/background-img.jpg");
 }
 
 .caption {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    line-height: 14px;
-    margin-left: 20px;
-    padding: 10px;
-    position: relative;
-    top: 80%;
-    width: 60%;
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 20px;
+  padding: 10px;
+  position: relative;
+  top: 80%;
+  width: 60%;
+  color: #000;
+  background-color: #fff;
+  opacity: 0.75;
+  font-style: italic;
 }
 
+.caption a:hover {
+  color: darkorchid;
+  text-decoration: none;
+}
