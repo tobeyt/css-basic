@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>练习-1：css selector</title>
     <style>
-       /* you can test your css at here */
+      /* you can test your css at here */
+      .section .title {
+        color: red;
+      }
+      /* #title {
+        color: green;
+      } */
+      /* .title {
+        color: yellow !important;
+      } */
+      .section > h1 {
+        color: blue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="section">
+      <h1 id="title" class="title">
+        title
         <h1 id="title" class="title">title</h1>
+      </h1>
+      <h1 id="title" class="title">title</h1>
+      <h1 id="title" class="title">title</h1>
     </div>
-</body>
+  </body>
 </html>
